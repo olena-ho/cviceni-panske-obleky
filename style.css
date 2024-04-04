@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 840px;
   margin-left: auto;
@@ -59,4 +63,39 @@ h1.site-title span {
 .t-shirt {
   stroke: #000;
   stroke-width: 2;
+}
+
+.product__colors {
+  align-items: center;
+}
+
+.color-option__box {
+  display: flex;
+ gap: 15px;
+}
+
+.button-list {
+  display: flex;
+}
+
+.color-option__list {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.color-option__button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid whitesmoke;
+  border-radius: 40px;
+}
+
+.color-option__text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.color-option__name {
+  width: 60px;
 }
