@@ -15,18 +15,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: white;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
-
 .wrapper {
   width: 850px;
-  height: 80vh;
+  height: 72vh;
   background-color: #000;
 }
 
@@ -49,8 +46,9 @@ header {
 }
 
 .product {
-  margin-top: -5rem;
-  padding: 3rem;
+  margin: -5rem auto 0;
+  padding: 1rem 2rem;
+  width: 85%;
   background-color: #141518;
   display: flex;
   justify-content: space-between;
@@ -69,54 +67,51 @@ header {
 .product__colors {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.color-option__box {
+.colors {
   display: flex;
   gap: 15px;
+  list-style: none;
+  padding-inline-start: 0;
+  font-size: 0;
 }
 
-.button-list {
+.colors__item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
 }
 
-.color-option__list {
-  text-align: center;
-  margin-right: 15px;
-}
-
-.color-option__button {
+.colors__button {
   width: 40px;
   height: 40px;
   border: 2px solid whitesmoke;
   border-radius: 40px;
 }
 
-.color-option__button:hover {
+.colors__button:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
-.color-option__text {
-  display: flex;
-  align-items: center;
+.colors__name {
+  font-size: 14px;
   text-align: center;
-}
-
-.color-option__name {
-  width: 60px;
 }
 
 .order {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 60px;
-
+  margin-bottom: 32px;
 }
 
 .order-btn {
+  font-size: 14px;
   padding: 10px 50px;
   background-color: #141518;
   color: white;
