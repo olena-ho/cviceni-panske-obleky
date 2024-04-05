@@ -1,13 +1,13 @@
-function color(z) {
-  const a = getComputedStyle(z);
-  const b = a.backgroundColor;
+function color(obj) {
+  const style = getComputedStyle(obj);
+  const elementColor = style.backgroundColor;
   const element = document.getElementById('product-image');
 
-  if (b === "rgb(0, 0, 0)") {
+  if (elementColor === "rgb(0, 0, 0)") {
     element.style.stroke="#fff";
-    element.style.fill=b;
+    element.style.fill=elementColor;
     } else {
     element.style.stroke="#000";
-    element.style.fill=b;
+    element.style.fill=elementColor;
     }
   }
