@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   color: white;
 }
 
@@ -32,6 +32,8 @@ header {
   background-position: center, center;
   background-repeat: no-repeat, repeat-x;
   height: 360px;
+  max-width: 845px;
+  margin: 0 auto;
 }
 
 h1.site-title {
